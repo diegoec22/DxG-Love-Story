@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revelación de Fotos - Magical Gift Reveal</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Revive nuestros momentos especiales a través de fotografías llenas de nostalgia y amor" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmagicalgi9940back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-gradient-romantic min-h-screen overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-sm border-b border-primary/10" role="navigation" aria-label="Navegación principal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="welcome_theater_landing.html" class="flex items-center space-x-2" aria-label="Magical Gift Reveal - Inicio">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-dancing text-xl text-primary font-bold">DxG Love My Girl</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="welcome_theater_landing.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Inicio</a>
+                        <a href="interactive_gift_container.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Regalo</a>
+                        <a href="photo_revelation_display.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10" aria-current="page">Fotos</a>
+                        <a href="floral_surprise_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Flores</a>
+                        <a href="message_theater_sanctuary.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Mensaje</a>
+                        <a href="memory_capture_preservation.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Recuerdos</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-primary hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 p-2 rounded-md" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-surface/95 backdrop-blur-sm border-t border-primary/10">
+                <a href="welcome_theater_landing.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Inicio</a>
+                <a href="interactive_gift_container.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Regalo</a>
+                <a href="photo_revelation_display.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-primary/10" aria-current="page">Fotos</a>
+                <a href="floral_surprise_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Flores</a>
+                <a href="message_theater_sanctuary.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Mensaje</a>
+                <a href="memory_capture_preservation.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Recuerdos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative min-h-screen pt-16" role="main">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+            <!-- Subtle heart patterns -->
+            <div class="absolute top-32 left-8 opacity-10">
+                <svg class="w-20 h-20 text-primary animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <div class="absolute top-64 right-12 opacity-10">
+                <svg class="w-16 h-16 text-secondary animate-pulse" fill="currentColor" viewBox="0 0 24 24" style="animation-delay: 1.5s;">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <div class="absolute bottom-40 left-16 opacity-10">
+                <svg class="w-14 h-14 text-accent animate-pulse" fill="currentColor" viewBox="0 0 24 24" style="animation-delay: 0.8s;">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            
+            <!-- Gentle sparkles -->
+            <div class="absolute top-48 right-24 opacity-20">
+                <div class="w-2 h-2 bg-accent rounded-full animate-ping"></div>
+            </div>
+            <div class="absolute bottom-32 right-32 opacity-20">
+                <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 2s;"></div>
+            </div>
+            <div class="absolute top-96 left-24 opacity-20">
+                <div class="w-3 h-3 bg-secondary rounded-full animate-ping" style="animation-delay: 1s;"></div>
+            </div>
+        </div>
+
+        <!-- Photo Revelation Section -->
+        <section class="relative z-10 py-16 px-4 sm:px-6 lg:px-8" aria-labelledby="photo-title">
+            <div class="max-w-6xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-gentle-fade">
+                    <h1 id="photo-title" class="font-dancing text-5xl sm:text-6xl lg:text-7xl text-gradient-romantic mb-6 leading-tight">
+                        Nuestros Recuerdos
+                    </h1>
+                    <p class="font-accent text-2xl sm:text-3xl text-primary mb-8 opacity-90">
+                        Momentos que guardan nuestra historia de amor
+                    </p>
+                    <div class="max-w-2xl mx-auto">
+                        <p class="text-lg sm:text-xl text-text-secondary leading-relaxed">
+                            Cada fotografía cuenta una parte de nuestra historia, mi princesa hermosa. 
+                            Estos momentos capturados en el tiempo son testigos de nuestro amor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Photo Display -->
+                <div class="mb-16">
+                    <div class="relative max-w-4xl mx-auto">
+                        <!-- Featured Photo Container -->
+                        <div class="relative bg-white p-4 sm:p-6 rounded-2xl shadow-gift transform hover:scale-105 transition-all duration-400 animate-gift-reveal" id="featured-photo">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="./DxGbbys.jpeg" alt="Nuestra foto especial juntos" class="w-full h-96 sm:h-[500px] object-cover cursor-pointer transition-transform duration-300 hover:scale-110" onclick="openPhotoModal(this)" />
+                                
+                                <!-- Photo overlay for zoom hint -->
+                                <div class="absolute inset-0 bg-black/0 hover:bg-black/10 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                                    <div class="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
+                                        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Polaroid-style caption -->
+                            <div class="mt-4 text-center">
+                                <p class="font-dancing text-2xl text-text-primary mb-2">
+                                    "Desde pequeños, destinados a amarnos"
+                                </p>
+                                <p class="text-text-secondary text-sm">
+                                    Nuestra foto mas especial • Estavamos destinado a amarte
+                                </p>
+                            </div>
+                            
+                            <!-- Decorative tape effect -->
+                            <div class="absolute -top-2 left-8 w-16 h-8 bg-accent/30 rounded-sm transform -rotate-12" aria-hidden="true"></div>
+                            <div class="absolute -top-2 right-8 w-16 h-8 bg-accent/30 rounded-sm transform rotate-12" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Gallery Grid -->
+                <div class="mb-16">
+                    <h2 class="font-dancing text-3xl sm:text-4xl text-primary text-center mb-12">
+                        Más momentos especiales
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Photo Card 1 -->
+                        <div class="polaroid-card animate-gentle-fade" style="animation-delay: 0.2s;">
+                            <div class="bg-white p-3 sm:p-4 rounded-xl shadow-soft transform hover:scale-105 hover:shadow-gift transition-all duration-400">
+                                <div class="relative overflow-hidden rounded-lg">
+                                    <img src="./called.g.jpeg" alt="Momento especial juntos" class="w-full h-48 object-cover cursor-pointer" loading="lazy" onclick="openPhotoModal(this)" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/04/19/beach-1867285_960_720.jpg'; this.onerror=null;" />
+                                </div>
+                                <div class="mt-3 text-center">
+                                    <p class="font-dancing text-lg text-text-primary">
+                                        "Sonrisas compartidas"
+                                    </p>
+                                </div>
+                                <!-- Decorative tape -->
+                                <div class="absolute -top-1 left-4 w-12 h-6 bg-accent/40 rounded-sm transform -rotate-6" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <!-- Photo Card 2 -->
+                        <div class="polaroid-card animate-gentle-fade" style="animation-delay: 0.4s;">
+                            <div class="bg-white p-3 sm:p-4 rounded-xl shadow-soft transform hover:scale-105 hover:shadow-gift transition-all duration-400">
+                                <div class="relative overflow-hidden rounded-lg">
+                                    <img src="playad.g.jpeg" alt="Aventuras juntos" class="w-full h-48 object-cover cursor-pointer" loading="lazy" onclick="openPhotoModal(this)" onerror="this.src='https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=600&auto=format&fit=crop'; this.onerror=null;" />
+                                </div>
+                                <div class="mt-3 text-center">
+                                    <p class="font-dancing text-lg text-text-primary">
+                                        "Aventuras inolvidables"
+                                    </p>
+                                </div>
+                                <!-- Decorative tape -->
+                                <div class="absolute -top-1 right-4 w-12 h-6 bg-secondary/40 rounded-sm transform rotate-6" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <!-- Photo Card 3 -->
+                        <div class="polaroid-card animate-gentle-fade" style="animation-delay: 0.6s;">
+                            <div class="bg-white p-3 sm:p-4 rounded-xl shadow-soft transform hover:scale-105 hover:shadow-gift transition-all duration-400">
+                                <div class="relative overflow-hidden rounded-lg">
+                                    <img src="glove.jpeg" alt="Momentos de felicidad" class="w-full h-48 object-cover cursor-pointer" loading="lazy" onclick="openPhotoModal(this)" onerror="this.src='https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600'; this.onerror=null;" />
+                                </div>
+                                <div class="mt-3 text-center">
+                                    <p class="font-dancing text-lg text-text-primary">
+                                        "Mi Princesa Hermosa 🫶🏽😍💕"
+                                    </p>
+                                </div>
+                                <!-- Decorative tape -->
+                                <div class="absolute -top-1 left-6 w-12 h-6 bg-primary/40 rounded-sm transform -rotate-3" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Then and Now Comparison -->
+                <div class="mb-16">
+                    <h2 class="font-dancing text-3xl sm:text-4xl text-primary text-center mb-12">
+                        Entonces y Ahora
+                    </h2>
+                    
+                    <div class="max-w-4xl mx-auto">
+                        <div class="bg-white p-6 rounded-3xl shadow-gift">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <!-- Then -->
+                                <div class="text-center">
+                                    <h3 class="font-dancing text-2xl text-text-primary mb-4">Entonces</h3>
+                                    <div class="relative overflow-hidden rounded-xl">
+                                        <img src="DxGbbys.jpeg" alt="Nosotros en el pasado" class="w-full h-64 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=500'; this.onerror=null;" />
+                                    </div>
+                                    <p class="mt-4 text-text-secondary">
+                                        Pequeños soñadores con grandes corazones
+                                    </p>
+                                </div>
+                                
+                                <!-- Now -->
+                                <div class="text-center">
+                                    <h3 class="font-dancing text-2xl text-text-primary mb-4">Ahora</h3>
+                                    <div class="relative overflow-hidden rounded-xl">
+                                        <img src="floresd.g.jpeg" alt="Nosotros ahora" class="w-full h-64 object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/04/19/beach-1867285_960_720.jpg'; this.onerror=null;" />
+                                    </div>
+                                    <p class="mt-4 text-text-secondary">
+                                        Quiero que Nuestro Amor que Sigua Creciendo cada Día
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Connection line -->
+                            <div class="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Actions -->
+                <div class="text-center space-y-6">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="interactive_gift_container.html" class="inline-flex items-center px-6 py-3 bg-secondary text-white font-poppins font-semibold rounded-full shadow-soft hover:shadow-gift hover:scale-105 transition-all duration-400 focus:outline-none focus:ring-4 focus:ring-secondary focus:ring-opacity-30">
+                            <svg class="mr-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                            </svg>
+                            <span>Volver al Regalo</span>
+                        </a>
+                        
+                        <a href="floral_surprise_section.html" class="inline-flex items-center px-8 py-4 bg-primary text-white font-poppins font-semibold text-lg rounded-full shadow-soft hover:shadow-gift hover:scale-105 transition-all duration-400 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-30">
+                            <span>Continuar con tu sopresa</span>
+                            <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Progress indicator -->
+                    <div class="flex justify-center items-center space-x-2 text-text-muted">
+                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                        <div class="w-2 h-2 bg-text-muted/30 rounded-full"></div>
+                        <div class="w-2 h-2 bg-text-muted/30 rounded-full"></div>
+                        <div class="w-2 h-2 bg-text-muted/30 rounded-full"></div>
+                    </div>
+                    
+                    <p class="text-sm text-text-muted">
+                        Paso 3 de 6 - Revelación de Fotos
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" onclick="closePhotoModal()">
+        <div class="relative max-w-4xl max-h-full">
+            <img id="modal-image" src alt class="max-w-full max-h-full object-contain rounded-lg shadow-gift" />
+            <button onclick="closePhotoModal()" class="absolute top-4 right-4 bg-white/90 hover:bg-white text-text-primary rounded-full p-2 transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="relative z-10 bg-surface/80 backdrop-blur-sm border-t border-primary/10 py-8" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-text-muted text-sm">
+                    © 2025 Magical Gift Reveal. Creado con amor para ti, mi princesa hermosa ❤️
+                </p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="welcome_theater_landing.html" class="text-text-muted hover:text-primary transition-colors duration-300">Inicio</a>
+                    <a href="interactive_gift_container.html" class="text-text-muted hover:text-primary transition-colors duration-300">Regalo</a>
+                    <a href="memory_capture_preservation.html" class="text-text-muted hover:text-primary transition-colors duration-300">Recuerdos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        function openPhotoModal(img) {
+            const modal = document.getElementById('photo-modal');
+            const modalImage = document.getElementById('modal-image');
+            
+            modalImage.src = img.src;
+            modalImage.alt = img.alt;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhotoModal() {
+            const modal = document.getElementById('photo-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePhotoModal();
+            }
+        });
+
+        // Add gentle parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.absolute.inset-0');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.05}px)`;
+            }
+        });
+
+        // Animate elements on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-gentle-fade');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 300);
+            });
+
+            // Store photo viewing in localStorage
+            const viewedPhotos = JSON.parse(localStorage.getItem('viewedPhotos') || '[]');
+            viewedPhotos.push({
+                page: 'photo_revelation_display',
+                timestamp: new Date().toISOString(),
+                photos: ['childhood_photo', 'shared_moments', 'adventures', 'happiness']
+            });
+            localStorage.setItem('viewedPhotos', JSON.stringify(viewedPhotos));
+        });
+
+        // Add loading states for navigation
+        document.querySelectorAll('a[href$=".html"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const button = this;
+                const originalText = button.innerHTML;
+                
+                if (button.href.includes('floral_surprise_section.html')) {
+                    button.innerHTML = `
+                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Preparando las flores...
+                    `;
+                    
+                    setTimeout(() => {
+                        button.innerHTML = originalText;
+                    }, 1500);
+                }
+            });
+        });
+
+        // Photo reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) scale(1)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all polaroid cards
+        document.querySelectorAll('.polaroid-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px) scale(0.95)';
+            card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

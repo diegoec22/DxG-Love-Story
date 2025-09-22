@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preservar Nuestros Recuerdos - Magical Gift Reveal</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Preserva este momento especial para siempre. Captura, guarda y comparte nuestra experiencia romántica digital" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmagicalgi9940back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-gradient-romantic min-h-screen overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-sm border-b border-primary/10" role="navigation" aria-label="Navegación principal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="welcome_theater_landing.html" class="flex items-center space-x-2" aria-label="Magical Gift Reveal - Inicio">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-dancing text-xl text-primary font-bold">Magical Gift</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="welcome_theater_landing.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Inicio</a>
+                        <a href="interactive_gift_container.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Regalo</a>
+                        <a href="photo_revelation_display.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Fotos</a>
+                        <a href="floral_surprise_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Flores</a>
+                        <a href="message_theater_sanctuary.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Mensaje</a>
+                        <a href="memory_capture_preservation.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300 bg-primary/10" aria-current="page">Recuerdos</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-primary hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 p-2 rounded-md" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-surface/95 backdrop-blur-sm border-t border-primary/10">
+                <a href="welcome_theater_landing.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Inicio</a>
+                <a href="interactive_gift_container.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Regalo</a>
+                <a href="photo_revelation_display.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Fotos</a>
+                <a href="floral_surprise_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Flores</a>
+                <a href="message_theater_sanctuary.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Mensaje</a>
+                <a href="memory_capture_preservation.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-primary/10" aria-current="page">Recuerdos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative min-h-screen pt-16" role="main">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+            <!-- Subtle heart patterns -->
+            <div class="absolute top-20 left-10 opacity-10">
+                <svg class="w-16 h-16 text-primary animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <div class="absolute top-40 right-16 opacity-10">
+                <svg class="w-12 h-12 text-secondary animate-pulse" fill="currentColor" viewBox="0 0 24 24" style="animation-delay: 1s;">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <div class="absolute bottom-32 left-20 opacity-10">
+                <svg class="w-20 h-20 text-accent animate-pulse" fill="currentColor" viewBox="0 0 24 24" style="animation-delay: 2s;">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            
+            <!-- Gentle sparkles -->
+            <div class="absolute top-60 right-32 opacity-20">
+                <div class="w-2 h-2 bg-accent rounded-full animate-ping"></div>
+            </div>
+            <div class="absolute bottom-48 right-20 opacity-20">
+                <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 1.5s;"></div>
+            </div>
+            <div class="absolute top-80 left-32 opacity-20">
+                <div class="w-3 h-3 bg-secondary rounded-full animate-ping" style="animation-delay: 0.5s;"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="relative z-10 py-20" aria-labelledby="hero-title">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="animate-gentle-fade">
+                    <!-- Main Title -->
+                    <h1 id="hero-title" class="font-dancing text-4xl sm:text-5xl lg:text-6xl text-gradient-romantic mb-6 leading-tight">
+                        Preservemos Este Momento
+                    </h1>
+                    
+                    <!-- Subtitle -->
+                    <p class="font-accent text-xl sm:text-2xl text-primary mb-8 opacity-90">
+                        Para que siempre recordemos lo especial que es nuestro amor
+                    </p>
+                    
+                    <!-- Description -->
+                    <div class="max-w-2xl mx-auto mb-12">
+                        <p class="text-lg text-text-secondary leading-relaxed">
+                            Guarda este momento mágico para siempre. Captura nuestra experiencia y créala parte de nuestra historia de amor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Capture Options -->
+        <section class="relative z-10 py-16" aria-labelledby="capture-options">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="capture-options" class="font-dancing text-3xl sm:text-4xl text-gradient-romantic text-center mb-12">
+                    Opciones de Preservación
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Screenshot Capture -->
+                    <div class="card-gentle hover:shadow-gift transition-all duration-400 animate-gentle-fade">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-dancing text-2xl text-primary mb-3">Captura de Pantalla</h3>
+                            <p class="text-text-secondary mb-6 leading-relaxed">
+                                Guarda una imagen de alta resolución de nuestra experiencia completa
+                            </p>
+                            <button onclick="captureScreenshot()" class="btn-primary w-full focus:ring-4 focus:ring-primary focus:ring-opacity-30" aria-label="Capturar screenshot de la experiencia">
+                                <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                Capturar Momento
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Video Compilation -->
+                    <div class="card-gentle hover:shadow-gift transition-all duration-400 animate-gentle-fade" style="animation-delay: 200ms;">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-dancing text-2xl text-secondary mb-3">Video Compilación</h3>
+                            <p class="text-text-secondary mb-6 leading-relaxed">
+                                Crea un video con todas las animaciones y transiciones de nuestra experiencia
+                            </p>
+                            <button onclick="createVideoCompilation()" class="btn-secondary w-full focus:ring-4 focus:ring-secondary focus:ring-opacity-30" aria-label="Crear compilación de video">
+                                <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10V9a2 2 0 012-2h2a2 2 0 012 2v1M9 10v5a2 2 0 002 2h2a2 2 0 002-2v-5"/>
+                                </svg>
+                                Crear Video
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Share Options -->
+                    <div class="card-gentle hover:shadow-gift transition-all duration-400 animate-gentle-fade" style="animation-delay: 400ms;">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-dancing text-2xl text-accent mb-3">Compartir Privado</h3>
+                            <p class="text-text-secondary mb-6 leading-relaxed">
+                                Comparte nuestra experiencia de manera privada y segura
+                            </p>
+                            <button onclick="openShareOptions()" class="bg-accent text-white font-poppins font-medium px-6 py-3 rounded-full w-full transition-all duration-300 hover:shadow-soft hover:scale-105 focus:outline-none focus:ring-4 focus:ring-accent focus:ring-opacity-30" aria-label="Abrir opciones de compartir">
+                                <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                                Compartir Amor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anniversary Reminder System -->
+        <section class="relative z-10 py-16 bg-surface/50" aria-labelledby="anniversary-system">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 id="anniversary-system" class="font-dancing text-3xl sm:text-4xl text-gradient-romantic mb-6">
+                        Sistema de Recordatorios
+                    </h2>
+                    <p class="text-lg text-text-secondary leading-relaxed">
+                        Configura recordatorios para revivir este momento especial en fechas importantes
+                    </p>
+                </div>
+
+                <div class="card-gift max-w-2xl mx-auto">
+                    <div class="space-y-6">
+                        <!-- Date Selection -->
+                        <div>
+                            <label for="anniversary-date" class="block text-sm font-medium text-text-primary mb-2">
+                                Fecha Especial para Recordar
+                            </label>
+                            <input type="date" id="anniversary-date" class="w-full px-4 py-3 border border-primary/20 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors duration-300" value="2025-09-21" />
+                        </div>
+
+                        <!-- Reminder Type -->
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-3">
+                                Tipo de Recordatorio
+                            </label>
+                            <div class="space-y-3">
+                                <label class="flex items-center">
+                                    <input type="radio" name="reminder-type" value="email" class="text-primary focus:ring-primary" />
+                                    <span class="ml-3 text-text-secondary">Recordatorio por email</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="reminder-type" value="browser" class="text-primary focus:ring-primary" checked />
+                                    <span class="ml-3 text-text-secondary">Notificación del navegador</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="reminder-type" value="both" class="text-primary focus:ring-primary" />
+                                    <span class="ml-3 text-text-secondary">Ambos métodos</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Personal Message -->
+                        <div>
+                            <label for="reminder-message" class="block text-sm font-medium text-text-primary mb-2">
+                                Mensaje Personal (Opcional)
+                            </label>
+                            <textarea id="reminder-message" rows="3" class="w-full px-4 py-3 border border-primary/20 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors duration-300" placeholder="Un mensaje especial para recordar este momento..."></textarea>
+                        </div>
+
+                        <!-- Save Reminder Button -->
+                        <button onclick="saveAnniversaryReminder()" class="btn-primary w-full text-lg py-4 focus:ring-4 focus:ring-primary focus:ring-opacity-30" aria-label="Guardar recordatorio de aniversario">
+                            <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            Guardar Recordatorio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Saved Memories Gallery -->
+        <section class="relative z-10 py-16" aria-labelledby="saved-memories">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 id="saved-memories" class="font-dancing text-3xl sm:text-4xl text-gradient-romantic mb-6">
+                        Nuestros Recuerdos Guardados
+                    </h2>
+                    <p class="text-lg text-text-secondary leading-relaxed">
+                        Una colección de todos los momentos especiales que hemos preservado
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="memories-gallery">
+                    <!-- Sample Memory Card -->
+                    <div class="card-gentle group hover:shadow-gift transition-all duration-400">
+                        <div class="aspect-w-16 aspect-h-9 mb-4 overflow-hidden rounded-xl">
+                            <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Recuerdo capturado" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-dancing text-xl text-primary">Momento Mágico</h3>
+                            <p class="text-sm text-text-muted">Guardado el 21 de septiembre, 2025</p>
+                            <div class="flex space-x-2">
+                                <button class="flex-1 text-sm px-3 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors duration-300" onclick="viewMemory(1)">
+                                    Ver
+                                </button>
+                                <button class="flex-1 text-sm px-3 py-2 bg-secondary/10 text-secondary rounded-lg hover:bg-secondary/20 transition-colors duration-300" onclick="shareMemory(1)">
+                                    Compartir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder for more memories -->
+                    <div class="card-gentle border-2 border-dashed border-primary/20 flex flex-col items-center justify-center h-80 text-center">
+                        <svg class="w-12 h-12 text-primary/40 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                        </svg>
+                        <p class="text-text-muted mb-4">Crea más recuerdos especiales</p>
+                        <a href="welcome_theater_landing.html" class="text-primary hover:text-primary-500 font-medium transition-colors duration-300">
+                            Revivir Experiencia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Indicator -->
+        <section class="relative z-10 py-8">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="flex justify-center items-center space-x-2 text-text-muted mb-4">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                </div>
+                <p class="text-sm text-text-muted">
+                    Paso 6 de 6 - Preservación de Recuerdos ✨
+                </p>
+                
+                <!-- Journey Complete Message -->
+                <div class="mt-8 card-gentle max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-dancing text-2xl text-gradient-romantic mb-3">
+                            ¡Experiencia Completa!
+                        </h3>
+                        <p class="text-text-secondary mb-6">
+                            Has completado toda nuestra experiencia romántica. Ahora estos momentos vivirán para siempre en nuestros corazones y en estos recuerdos digitales.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="welcome_theater_landing.html" class="btn-primary inline-flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                                Revivir Experiencia
+                            </a>
+                            <button onclick="shareCompleteExperience()" class="btn-secondary inline-flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                                Compartir Amor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Share Modal -->
+    <div id="share-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-surface rounded-3xl max-w-md w-full p-6 animate-gentle-fade">
+            <div class="text-center mb-6">
+                <h3 class="font-dancing text-2xl text-gradient-romantic mb-2">Compartir Nuestro Amor</h3>
+                <p class="text-text-secondary">Elige cómo quieres compartir este momento especial</p>
+            </div>
+            
+            <div class="space-y-4">
+                <button onclick="shareViaWhatsApp()" class="w-full flex items-center justify-center px-4 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors duration-300">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                    </svg>
+                    WhatsApp
+                </button>
+                
+                <button onclick="copyShareLink()" class="w-full flex items-center justify-center px-4 py-3 bg-primary text-white rounded-xl hover:bg-primary-400 transition-colors duration-300">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    Copiar Enlace
+                </button>
+                
+                <button onclick="downloadMemory()" class="w-full flex items-center justify-center px-4 py-3 bg-secondary text-white rounded-xl hover:bg-secondary-400 transition-colors duration-300">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Descargar
+                </button>
+            </div>
+            
+            <button onclick="closeShareModal()" class="w-full mt-6 px-4 py-2 text-text-muted hover:text-text-primary transition-colors duration-300">
+                Cerrar
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="relative z-10 bg-surface/80 backdrop-blur-sm border-t border-primary/10 py-8" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-text-muted text-sm">
+                    © 2025 Magical Gift Reveal. Creado con amor para ti, mi princesa hermosa ❤️
+                </p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="welcome_theater_landing.html" class="text-text-muted hover:text-primary transition-colors duration-300">Inicio</a>
+                    <a href="interactive_gift_container.html" class="text-text-muted hover:text-primary transition-colors duration-300">Regalo</a>
+                    <a href="memory_capture_preservation.html" class="text-text-muted hover:text-primary transition-colors duration-300">Recuerdos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for functionality -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Screenshot capture functionality
+        async function captureScreenshot() {
+            const button = event.target;
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Capturando...
+            `;
+
+            try {
+                // Simulate screenshot capture
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Create a canvas to simulate screenshot
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = 1200;
+                canvas.height = 800;
+                
+                // Create gradient background
+                const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+                gradient.addColorStop(0, '#FDF2F8');
+                gradient.addColorStop(1, '#FAF5FF');
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                // Add text
+                ctx.fillStyle = '#E8B4CB';
+                ctx.font = 'bold 48px serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('Magical Gift Reveal', canvas.width/2, canvas.height/2 - 50);
+                
+                ctx.fillStyle = '#7A7A7A';
+                ctx.font = '24px sans-serif';
+                ctx.fillText('Nuestro momento especial - 21 de septiembre, 2025', canvas.width/2, canvas.height/2 + 20);
+                
+                // Download the image
+                const link = document.createElement('a');
+                link.download = 'nuestro-momento-especial.png';
+                link.href = canvas.toDataURL();
+                link.click();
+                
+                showNotification('¡Screenshot guardado exitosamente!', 'success');
+                
+            } catch (error) {
+                showNotification('Error al capturar screenshot', 'error');
+            } finally {
+                button.innerHTML = originalText;
+            }
+        }
+
+        // Video compilation functionality
+        async function createVideoCompilation() {
+            const button = event.target;
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Creando video...
+            `;
+
+            try {
+                // Simulate video creation process
+                await new Promise(resolve => setTimeout(resolve, 3000));
+                
+                showNotification('¡Video compilación creado! Se descargará en breve.', 'success');
+                
+                // Simulate download
+                setTimeout(() => {
+                    const link = document.createElement('a');
+                    link.download = 'nuestra-experiencia-romantica.mp4';
+                    link.href = '#'; // In real implementation, this would be the video blob URL
+                    showNotification('Video listo para descargar', 'success');
+                }, 1000);
+                
+            } catch (error) {
+                showNotification('Error al crear video', 'error');
+            } finally {
+                button.innerHTML = originalText;
+            }
+        }
+
+        // Share options functionality
+        function openShareOptions() {
+            document.getElementById('share-modal').classList.remove('hidden');
+        }
+
+        function closeShareModal() {
+            document.getElementById('share-modal').classList.add('hidden');
+        }
+
+        function shareViaWhatsApp() {
+            const message = encodeURIComponent('¡Mira esta experiencia romántica especial que creé para ti! 💕 https://magical-gift-reveal.com');
+            window.open(`https://wa.me/?text=${message}`, '_blank');
+            closeShareModal();
+        }
+
+        function copyShareLink() {
+            const link = 'https://magical-gift-reveal.com/memory-capture-preservation';
+            navigator.clipboard.writeText(link).then(() => {
+                showNotification('¡Enlace copiado al portapapeles!', 'success');
+                closeShareModal();
+            });
+        }
+
+        function downloadMemory() {
+            // Simulate download
+            showNotification('Descargando recuerdo...', 'success');
+            closeShareModal();
+        }
+
+        // Anniversary reminder functionality
+        function saveAnniversaryReminder() {
+            const date = document.getElementById('anniversary-date').value;
+            const reminderType = document.querySelector('input[name="reminder-type"]:checked').value;
+            const message = document.getElementById('reminder-message').value;
+            
+            if (!date) {
+                showNotification('Por favor selecciona una fecha', 'error');
+                return;
+            }
+
+            // Save to localStorage
+            const reminder = {
+                date: date,
+                type: reminderType,
+                message: message,
+                created: new Date().toISOString()
+            };
+            
+            localStorage.setItem('anniversaryReminder', JSON.stringify(reminder));
+            
+            // Request notification permission if needed
+            if (reminderType === 'browser' || reminderType === 'both') {
+                if ('Notification' in window) {
+                    Notification.requestPermission();
+                }
+            }
+            
+            showNotification('¡Recordatorio guardado exitosamente!', 'success');
+        }
+
+        // Memory gallery functionality
+        function viewMemory(id) {
+            showNotification('Abriendo recuerdo...', 'success');
+            // In real implementation, this would open the memory in a modal or new page
+        }
+
+        function shareMemory(id) {
+            openShareOptions();
+        }
+
+        function shareCompleteExperience() {
+            openShareOptions();
+        }
+
+        // Notification system
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-20 right-4 z-50 px-6 py-3 rounded-lg shadow-soft animate-gentle-fade ${
+                type === 'success' ? 'bg-success text-white' : 
+                type === 'error' ? 'bg-error text-white' : 
+                'bg-primary text-white'
+            }`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for saved reminders
+            const savedReminder = localStorage.getItem('anniversaryReminder');
+            if (savedReminder) {
+                const reminder = JSON.parse(savedReminder);
+                document.getElementById('anniversary-date').value = reminder.date;
+                document.querySelector(`input[name="reminder-type"][value="${reminder.type}"]`).checked = true;
+                document.getElementById('reminder-message').value = reminder.message;
+            }
+
+            // Add gentle parallax effect
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('.absolute.inset-0');
+                if (parallax) {
+                    parallax.style.transform = `translateY(${scrolled * 0.1}px)`;
+                }
+            });
+
+            // Animate elements on load
+            const elements = document.querySelectorAll('.animate-gentle-fade');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('share-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeShareModal();
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

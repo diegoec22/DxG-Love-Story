@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #E8B4CB; /* rose-300 */
+  --color-primary-50: #FDF2F8; /* rose-50 */
+  --color-primary-100: #FCE7F3; /* rose-100 */
+  --color-primary-200: #FBCFE8; /* rose-200 */
+  --color-primary-300: #E8B4CB; /* rose-300 */
+  --color-primary-400: #F472B6; /* rose-400 */
+  --color-primary-500: #EC4899; /* rose-500 */
+  
+  /* Secondary Colors */
+  --color-secondary: #D8C4E8; /* purple-200 */
+  --color-secondary-50: #FAF5FF; /* purple-50 */
+  --color-secondary-100: #F3E8FF; /* purple-100 */
+  --color-secondary-200: #D8C4E8; /* purple-200 */
+  --color-secondary-300: #C4B5FD; /* purple-300 */
+  --color-secondary-400: #A78BFA; /* purple-400 */
+  --color-secondary-500: #8B5CF6; /* purple-500 */
+  
+  /* Accent Colors */
+  --color-accent: #F4D03F; /* yellow-300 */
+  --color-accent-50: #FEFCE8; /* yellow-50 */
+  --color-accent-100: #FEF3C7; /* yellow-100 */
+  --color-accent-200: #FDE68A; /* yellow-200 */
+  --color-accent-300: #F4D03F; /* yellow-300 */
+  --color-accent-400: #FBBF24; /* yellow-400 */
+  --color-accent-500: #F59E0B; /* yellow-500 */
+  
+  /* Background Colors */
+  --color-background: #FDF8F0; /* orange-50 */
+  --color-surface: #F9F3F7; /* rose-25 */
+  
+  /* Text Colors */
+  --color-text-primary: #4A4A4A; /* gray-600 */
+  --color-text-secondary: #7A7A7A; /* gray-500 */
+  --color-text-muted: #9CA3AF; /* gray-400 */
+  
+  /* Status Colors */
+  --color-success: #82C09A; /* green-300 */
+  --color-success-50: #F0FDF4; /* green-50 */
+  --color-success-100: #DCFCE7; /* green-100 */
+  --color-success-500: #22C55E; /* green-500 */
+  
+  --color-warning: #F7B731; /* amber-400 */
+  --color-warning-50: #FFFBEB; /* amber-50 */
+  --color-warning-100: #FEF3C7; /* amber-100 */
+  --color-warning-500: #F59E0B; /* amber-500 */
+  
+  --color-error: #E17055; /* red-400 */
+  --color-error-50: #FEF2F2; /* red-50 */
+  --color-error-100: #FEE2E2; /* red-100 */
+  --color-error-500: #EF4444; /* red-500 */
+  
+  /* Shadow Variables */
+  --shadow-soft: 0 4px 20px rgba(232, 180, 203, 0.15);
+  --shadow-gift: 0 8px 32px rgba(232, 180, 203, 0.25);
+  --shadow-gentle: 0 2px 12px rgba(232, 180, 203, 0.1);
+  
+  /* Animation Variables */
+  --transition-organic: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-standard: 300ms;
+  --duration-slow: 400ms;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .font-accent {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  .font-cta {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-cta font-medium px-6 py-3 rounded-full;
+    @apply transition-all duration-300 ease-[var(--transition-organic)];
+    @apply hover:shadow-soft hover:scale-105;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-text-primary font-cta font-medium px-6 py-3 rounded-full;
+    @apply transition-all duration-300 ease-[var(--transition-organic)];
+    @apply hover:shadow-soft hover:scale-105;
+    @apply focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50;
+  }
+  
+  .card-gentle {
+    @apply bg-surface rounded-2xl p-6;
+    box-shadow: var(--shadow-gentle);
+    @apply transition-all duration-300 ease-[var(--transition-organic)];
+  }
+  
+  .card-gift {
+    @apply bg-surface rounded-3xl p-8;
+    box-shadow: var(--shadow-gift);
+    @apply transition-all duration-400 ease-[var(--transition-organic)];
+  }
+  
+  .text-gradient-romantic {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-romantic {
+    background: linear-gradient(135deg, var(--color-primary-50), var(--color-secondary-50));
+  }
+  
+  .bg-gradient-warm {
+    background: linear-gradient(135deg, var(--color-background), var(--color-surface));
+  }
+}
+
+@layer utilities {
+  .animate-gentle-fade {
+    animation: gentleFade var(--duration-slow) ease-[var(--transition-organic)];
+  }
+  
+  .animate-gift-reveal {
+    animation: giftReveal 800ms ease-[var(--transition-organic)];
+  }
+  
+  .animate-text-reveal {
+    animation: textReveal 600ms ease-[var(--transition-organic)] forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes gentleFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes giftReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotateY(-15deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05) rotateY(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes textReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scrolling for emotional pacing */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for intimate feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-400);
+}

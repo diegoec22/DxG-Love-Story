@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santuario del Mensaje - Magical Gift Reveal</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="El momento más íntimo de nuestra experiencia romántica - donde las palabras del corazón cobran vida" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmagicalgi9940back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-gradient-romantic min-h-screen overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-sm border-b border-primary/10" role="navigation" aria-label="Navegación principal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="welcome_theater_landing.html" class="flex items-center space-x-2" aria-label="Magical Gift Reveal - Inicio">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="font-dancing text-xl text-primary font-bold">DxG Love My Girl</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="welcome_theater_landing.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Inicio</a>
+                        <a href="interactive_gift_container.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Regalo</a>
+                        <a href="photo_revelation_display.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Fotos</a>
+                        <a href="floral_surprise_section.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Flores</a>
+                        <a href="message_theater_sanctuary.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10" aria-current="page">Mensaje</a>
+                        <a href="memory_capture_preservation.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-primary/10">Recuerdos</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-primary hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 p-2 rounded-md" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-surface/95 backdrop-blur-sm border-t border-primary/10">
+                <a href="welcome_theater_landing.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Inicio</a>
+                <a href="interactive_gift_container.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Regalo</a>
+                <a href="photo_revelation_display.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Fotos</a>
+                <a href="floral_surprise_section.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Flores</a>
+                <a href="message_theater_sanctuary.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-primary/10" aria-current="page">Mensaje</a>
+                <a href="memory_capture_preservation.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300">Recuerdos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <!-- Floating hearts -->
+        <div class="absolute top-20 left-10 opacity-5">
+            <svg class="w-24 h-24 text-primary animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+        </div>
+        <div class="absolute top-60 right-16 opacity-5">
+            <svg class="w-16 h-16 text-secondary animate-pulse" fill="currentColor" viewBox="0 0 24 24" style="animation-delay: 2s;">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+        </div>
+        <div class="absolute bottom-40 left-20 opacity-5">
+            <svg class="w-20 h-20 text-accent animate-pulse" fill="currentColor" viewBox="0 0 24 24" style="animation-delay: 4s;">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+        </div>
+        
+        <!-- Gentle sparkles -->
+        <div class="absolute top-32 right-32 opacity-20">
+            <div class="w-2 h-2 bg-accent rounded-full animate-ping"></div>
+        </div>
+        <div class="absolute bottom-60 right-40 opacity-20">
+            <div class="w-1 h-1 bg-primary rounded-full animate-ping" style="animation-delay: 3s;"></div>
+        </div>
+        <div class="absolute top-96 left-40 opacity-20">
+            <div class="w-3 h-3 bg-secondary rounded-full animate-ping" style="animation-delay: 1.5s;"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="relative min-h-screen pt-24 pb-16" role="main">
+        <!-- Progress indicator -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+            <div class="flex justify-center items-center space-x-2 text-text-muted">
+                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <div class="w-2 h-2 bg-text-muted/30 rounded-full"></div>
+            </div>
+            <p class="text-center text-sm text-text-muted mt-2">
+                Paso 5 de 6 - Santuario del Mensaje
+            </p>
+        </div>
+
+        <!-- Message Theater Section -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="message-title">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h1 id="message-title" class="font-dancing text-4xl sm:text-5xl lg:text-6xl text-gradient-romantic mb-4">
+                    Desde Mi Corazón
+                </h1>
+                <p class="font-accent text-xl sm:text-2xl text-primary opacity-90">
+                    Las palabras que mi alma quiere decirte
+                </p>
+            </div>
+
+            <!-- Audio Controls -->
+            <div class="flex justify-center mb-8">
+                <div class="bg-surface/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-gentle">
+                    <div class="flex items-center space-x-4">
+                        <button id="playPauseBtn" class="flex items-center space-x-2 text-primary hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 rounded-md p-2" aria-label="Reproducir música de fondo">
+                            <svg id="playIcon" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                            <svg id="pauseIcon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                            </svg>
+                            <span class="text-sm font-medium">Música</span>
+                        </button>
+                        <div class="w-px h-6 bg-primary/20"></div>
+                        <button id="pauseReadingBtn" class="flex items-center space-x-2 text-text-secondary hover:text-primary transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 rounded-md p-2" aria-label="Pausar lectura">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-sm font-medium">Pausar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Container -->
+            <div class="card-gift max-w-3xl mx-auto relative">
+                <!-- Decorative elements -->
+                <div class="absolute -top-4 -left-4 w-8 h-8 text-accent opacity-30" aria-hidden="true">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <div class="absolute -top-4 -right-4 w-6 h-6 text-secondary opacity-30" aria-hidden="true">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+
+                <!-- Message Content -->
+                <div id="messageContent" class="space-y-6 text-center">
+                    <!-- Opening -->
+                    <div class="message-line opacity-0" data-delay="1000">
+                        <p class="font-dancing text-2xl sm:text-3xl text-primary mb-4">
+                            Mi princesa hermosa,
+                        </p>
+                    </div>
+
+                    <!-- First paragraph -->
+                    <div class="message-line opacity-0" data-delay="3000">
+                        <p class="text-lg sm:text-xl text-text-primary leading-relaxed">
+                            Sé que he cometido errores, y sé que a veces no he estado a la altura de lo que mereces.
+                        </p>
+                    </div>
+
+                    <div class="message-line opacity-0" data-delay="5500">
+                        <p class="text-lg sm:text-xl text-text-primary leading-relaxed">
+                            Pero quiero que sepas que cada día que pasa, mi amor por ti crece más y más.
+                        </p>
+                    </div>
+
+                    <!-- Emotional acknowledgment -->
+                    <div class="message-line opacity-0" data-delay="8000">
+                        <p class="font-accent text-xl sm:text-2xl text-secondary mb-4">
+                            Cachetona hermosa,
+                        </p>
+                    </div>
+
+                    <div class="message-line opacity-0" data-delay="10000">
+                        <p class="text-lg sm:text-xl text-text-primary leading-relaxed">
+                            Eres la luz que ilumina mis días más oscuros, la sonrisa que me da fuerzas para seguir adelante.
+                        </p>
+                    </div>
+
+                    <div class="message-line opacity-0" data-delay="12500">
+                        <p class="text-lg sm:text-xl text-text-primary leading-relaxed">
+                            No hay palabras suficientes para expresar lo que significas para mí.
+                        </p>
+                    </div>
+
+                    <!-- Promise and commitment -->
+                    <div class="message-line opacity-0" data-delay="15000">
+                        <p class="text-lg sm:text-xl text-text-primary leading-relaxed font-medium">
+                            Prometo ser mejor cada día, prometo valorarte como te mereces.
+                        </p>
+                    </div>
+
+                    <div class="message-line opacity-0" data-delay="17500">
+                        <p class="text-lg sm:text-xl text-text-primary leading-relaxed">
+                            Prometo que nuestros mejores momentos están por venir, mi amor.
+                        </p>
+                    </div>
+
+                    <!-- Emotional climax -->
+                    <div class="message-line opacity-0" data-delay="20000">
+                        <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-6 my-8">
+                            <p class="font-dancing text-3xl sm:text-4xl text-gradient-romantic font-bold">
+                                Te amo muchísimo, MY GIRL! ❤️
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Closing -->
+                    <div class="message-line opacity-0" data-delay="22500">
+                        <p class="text-base sm:text-lg text-text-secondary italic">
+                            Con todo mi corazón y toda mi alma,
+                        </p>
+                    </div>
+
+                    <div class="message-line opacity-0" data-delay="24000">
+                        <p class="font-accent text-xl sm:text-2xl text-primary">
+                            Tu amor eterno
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Reading Progress -->
+                <div class="mt-8 pt-6 border-t border-primary/10">
+                    <div class="flex justify-center">
+                        <div id="readingProgress" class="w-full max-w-md bg-primary/10 rounded-full h-2">
+                            <div id="progressBar" class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <p id="progressText" class="text-center text-sm text-text-muted mt-2">
+                        Preparando mensaje...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Continue Button -->
+            <div class="text-center mt-12">
+                <a href="memory_capture_preservation.html" id="continueBtn" class="inline-flex items-center px-8 py-4 bg-primary text-white font-poppins font-semibold text-lg rounded-full shadow-soft hover:shadow-gift hover:scale-105 transition-all duration-400 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-30 opacity-0" role="button" aria-label="Continuar a la preservación de recuerdos">
+                    <span>Guardar Este Momento</span>
+                    <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+                
+                <p class="text-sm text-text-muted mt-4 opacity-0" id="continueHint">
+                    Tómate el tiempo que necesites para absorber cada palabra ❤️
+                </p>
+            </div>
+        </section>
+
+        <!-- Floating romantic elements -->
+        <div class="absolute bottom-20 left-10 opacity-20 animate-bounce" aria-hidden="true" style="animation-delay: 2s;">
+            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3" alt class="w-12 h-12 rounded-full shadow-gentle" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1263986/pexels-photo-1263986.jpeg?auto=compress&cs=tinysrgb&w=80'; this.onerror=null;" />
+        </div>
+        
+        <div class="absolute top-40 right-16 opacity-20 animate-bounce" aria-hidden="true" style="animation-delay: 4s;">
+            <img src="https://images.pixabay.com/photo/2017/02/15/20/58/eustoma-2069329_960_720.jpg" alt class="w-10 h-10 rounded-full shadow-gentle" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 bg-surface/80 backdrop-blur-sm border-t border-primary/10 py-8" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-text-muted text-sm">
+                    © 2025 Magical Gift Reveal. Creado con amor para ti, mi princesa hermosa ❤️
+                </p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="welcome_theater_landing.html" class="text-text-muted hover:text-primary transition-colors duration-300">Inicio</a>
+                    <a href="interactive_gift_container.html" class="text-text-muted hover:text-primary transition-colors duration-300">Regalo</a>
+                    <a href="memory_capture_preservation.html" class="text-text-muted hover:text-primary transition-colors duration-300">Recuerdos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background Audio (Optional) -->
+    <audio id="backgroundMusic" loop preload="none">
+        <source src="https://www.soundjay.com/misc/sounds/romantic-piano.mp3" type="audio/mpeg" />
+        <!-- Fallback for browsers that don't support MP3 -->
+        <source src="https://www.soundjay.com/misc/sounds/romantic-piano.ogg" type="audio/ogg" />
+    </audio>
+
+    <!-- JavaScript for Message Theater -->
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Message theater variables
+        let messageLines = [];
+        let currentLine = 0;
+        let isPlaying = true;
+        let isPaused = false;
+        let timeouts = [];
+        let backgroundMusic = null;
+
+        // Initialize message theater
+        document.addEventListener('DOMContentLoaded', function() {
+            messageLines = document.querySelectorAll('.message-line');
+            backgroundMusic = document.getElementById('backgroundMusic');
+            
+            // Setup audio controls
+            setupAudioControls();
+            
+            // Start message revelation
+            setTimeout(startMessageReveal, 1000);
+        });
+
+        function setupAudioControls() {
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const pauseReadingBtn = document.getElementById('pauseReadingBtn');
+            const playIcon = document.getElementById('playIcon');
+            const pauseIcon = document.getElementById('pauseIcon');
+
+            // Background music control
+            playPauseBtn.addEventListener('click', function() {
+                if (backgroundMusic.paused) {
+                    backgroundMusic.play().catch(e => console.log('Audio play failed:', e));
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                } else {
+                    backgroundMusic.pause();
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                }
+            });
+
+            // Reading pause control
+            pauseReadingBtn.addEventListener('click', function() {
+                toggleReadingPause();
+            });
+        }
+
+        function startMessageReveal() {
+            updateProgress(0);
+            revealNextLine();
+        }
+
+        function revealNextLine() {
+            if (currentLine >= messageLines.length || isPaused) {
+                if (currentLine >= messageLines.length) {
+                    onMessageComplete();
+                }
+                return;
+            }
+
+            const line = messageLines[currentLine];
+            const delay = parseInt(line.dataset.delay) || 2000;
+
+            // Create typewriter effect
+            const timeout = setTimeout(() => {
+                if (!isPaused) {
+                    revealLineWithTypewriter(line);
+                    currentLine++;
+                    updateProgress((currentLine / messageLines.length) * 100);
+                    
+                    // Schedule next line
+                    setTimeout(() => {
+                        if (!isPaused) {
+                            revealNextLine();
+                        }
+                    }, 1500);
+                }
+            }, currentLine === 0 ? 0 : 2500);
+
+            timeouts.push(timeout);
+        }
+
+        function revealLineWithTypewriter(line) {
+            line.style.opacity = '1';
+            line.style.transform = 'translateY(0)';
+            line.classList.add('animate-text-reveal');
+
+            // Add typewriter effect to text content
+            const textElement = line.querySelector('p');
+            if (textElement) {
+                const text = textElement.textContent;
+                textElement.textContent = '';
+                textElement.style.opacity = '1';
+
+                let charIndex = 0;
+                const typeInterval = setInterval(() => {
+                    if (charIndex < text.length && !isPaused) {
+                        textElement.textContent += text[charIndex];
+                        charIndex++;
+                    } else {
+                        clearInterval(typeInterval);
+                    }
+                }, 50);
+            }
+
+            // Add gentle glow effect for emotional climax
+            if (line.querySelector('.font-dancing')) {
+                line.classList.add('animate-pulse');
+            }
+        }
+
+        function toggleReadingPause() {
+            isPaused = !isPaused;
+            const pauseBtn = document.getElementById('pauseReadingBtn');
+            const progressText = document.getElementById('progressText');
+
+            if (isPaused) {
+                pauseBtn.innerHTML = `
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <span class="text-sm font-medium">Continuar</span>
+                `;
+                progressText.textContent = 'Lectura pausada - Tómate tu tiempo ❤️';
+                
+                // Clear pending timeouts
+                timeouts.forEach(timeout => clearTimeout(timeout));
+                timeouts = [];
+            } else {
+                pauseBtn.innerHTML = `
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-sm font-medium">Pausar</span>
+                `;
+                progressText.textContent = 'Continuando mensaje...';
+                
+                // Resume revelation
+                setTimeout(revealNextLine, 500);
+            }
+        }
+
+        function updateProgress(percentage) {
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+            
+            progressBar.style.width = percentage + '%';
+            
+            if (percentage === 0) {
+                progressText.textContent = 'Comenzando mensaje del corazón...';
+            } else if (percentage < 50) {
+                progressText.textContent = 'Revelando sentimientos...';
+            } else if (percentage < 90) {
+                progressText.textContent = 'Llegando al corazón del mensaje...';
+            } else if (percentage < 100) {
+                progressText.textContent = 'Mensaje casi completo...';
+            } else {
+                progressText.textContent = 'Mensaje completo - Desde mi corazón al tuyo ❤️';
+            }
+        }
+
+        function onMessageComplete() {
+            // Show continue button with animation
+            const continueBtn = document.getElementById('continueBtn');
+            const continueHint = document.getElementById('continueHint');
+            
+            setTimeout(() => {
+                continueBtn.style.opacity = '1';
+                continueBtn.style.transform = 'translateY(0)';
+                continueBtn.classList.add('animate-gentle-fade');
+                
+                setTimeout(() => {
+                    continueHint.style.opacity = '1';
+                    continueHint.classList.add('animate-gentle-fade');
+                }, 1000);
+            }, 2000);
+
+            // Add completion celebration
+            createHeartAnimation();
+        }
+
+        function createHeartAnimation() {
+            // Create floating hearts animation
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.innerHTML = '❤️';
+                    heart.className = 'fixed text-2xl pointer-events-none z-50';
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.top = window.innerHeight + 'px';
+                    heart.style.animation = 'floatUp 3s ease-out forwards';
+                    
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 3000);
+                }, i * 200);
+            }
+        }
+
+        // Add floating animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatUp {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+            
+            .animate-text-reveal {
+                animation: textReveal 600ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            }
+            
+            @keyframes textReveal {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Handle page visibility change
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden && backgroundMusic && !backgroundMusic.paused) {
+                backgroundMusic.pause();
+            }
+        });
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add gentle parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.fixed.inset-0');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.05}px)`;
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
